@@ -70,8 +70,9 @@ export const RitualListPage: React.FC<Props> = ({
   }, [rituals, favouriteSet]);
   const categoryLabel = CATEGORY_CHIPS.find((c) => c.id === selectedCategory)?.label ?? '';
 
-  // In the Blessings view (when not searching) the cards sit under small section headings
-  const showBlessingSections = selectedCategory === 'blessings' && !deferredQuery.trim();
+  // Section headings in the Blessings view are switched off: blessings are listed in file-name order.
+  // To bring the headings back, change `false` to `selectedCategory === 'blessings' && !deferredQuery.trim()`.
+  const showBlessingSections = false;
   const sections = useMemo(() => {
     if (!showBlessingSections) return [{ id: 'all', label: '', items: results }];
     const known = new Set(BLESSING_GROUPS.map((g) => g.id as string));
