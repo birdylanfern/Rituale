@@ -1,0 +1,8 @@
+{
+  "name": "Collectio Rituum (1954)",
+  "description": "Liturgical missal app presenting the 1954 Collectio Rituum for the United States, complete with authentic red rubrics, illuminated drop caps, Latin-English bilingual texts, and traditional Roman Ritual ceremonies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
