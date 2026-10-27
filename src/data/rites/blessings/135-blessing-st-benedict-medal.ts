@@ -3,7 +3,7 @@ import { RitualItem } from '../../../types/liturgy';
 // Not in the 1954 Collectio Rituum. This is the "Benedictio Numismatum Sancti Benedicti" from the
 // Propria Ordinis Sancti Benedicti (cf. Rituale Romanum, 1906 ed.), Latin as transcribed on christusregnat.com;
 // the English is a new translation of that Latin. Typos in the online transcription were corrected
-// (Patre, in conspéctu, immaculáti, numismáta). The Our Father rubric is given as it stands in that source.
+// (Patre, in conspéctu, immaculáti, numismáta). The Our Father is shown by its incipit only (said silently), as in the other rites.
 const ritual: RitualItem = {
   id: 'blessing-st-benedict-medal',
   titleEnglish: 'Blessing of the Medal of Saint Benedict',
@@ -13,7 +13,7 @@ const ritual: RitualItem = {
   categoryLabel: 'Titulus V: Benedictionale',
   tags: ['st benedict', 'saint benedict', 'medal', 'cross', 'crucifix', 'rosary', 'exorcism', 'protection', 'benedictine'],
   lines: [
-    { isRubric: true, textLatin: 'Sacerdos benedicturus numismata sancti Benedicti, dicit:', textEnglish: 'The priest who is to bless the medals of Saint Benedict says:' },
+    { isRubric: true, textLatin: 'Sacerdos benedicturus numismata sancti Benedicti, superpelliceo et stola alba indutus, dicit:', textEnglish: 'The priest who is to bless the medals of Saint Benedict, vested in surplice and white stole, says:' },
     { textLatin: '℣. Adjutórium nostrum ✠ in nómine Dómini.', textEnglish: '℣. Our help ✠ is in the name of the Lord.' },
     { textLatin: '℟. Qui fecit cælum et terram.', textEnglish: '℟. Who made heaven and earth.' },
     { isHeading: true, textLatin: 'Exorcismus', textEnglish: 'Exorcism' },
@@ -24,8 +24,7 @@ const ritual: RitualItem = {
     { textLatin: '℟. Christe, eléison.', textEnglish: '℟. Christ, have mercy.' },
     { textLatin: '℣. Kýrie, eléison.', textEnglish: '℣. Lord, have mercy.' },
     { textLatin: '℟. Kýrie, eléison.', textEnglish: '℟. Lord, have mercy.' },
-    { isRubric: true, textLatin: 'Sacerdos Orationem Dominicam secrete usque ad versum: “debitoribus nostris” dicit.', textEnglish: 'The priest says the Lord’s Prayer silently, up to the verse: “as we forgive those who trespass against us.”' },
-    { speakerLatin: 'Sacerdos:', speakerEnglish: 'Priest:', textLatin: 'Pater noster, qui es in cælis, sanctificétur nomen tuum. Advéniat Regnum tuum. Fiat volúntas tua, sicut in cælo et in terra. Panem nostrum quotidiánum da nobis hódie. Et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris.', textEnglish: 'Our Father, Who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us.' },
+    { textLatin: 'Pater noster', textEnglish: 'Our Father' },
     { textLatin: '℣. Et ne nos indúcas in tentatiónem.', textEnglish: '℣. And lead us not into temptation.' },
     { textLatin: '℟. Sed líbera nos a malo.', textEnglish: '℟. But deliver us from evil.' },
     { textLatin: '℣. Salvos fac servos tuos.', textEnglish: '℣. Save Thy servants.' },
