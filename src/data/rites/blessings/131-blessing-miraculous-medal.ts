@@ -27,7 +27,7 @@ const ritual: RitualItem = {
     { speakerLatin: 'Sacerdos:', speakerEnglish: 'Priest:', isSacramental: true, textLatin: 'Accípite sanctum Numísma, gesta fidéliter, et digna veneratióne prosequímini: ut piíssima immaculáta cælórum Dómina vos prótegat atque deféndat; et pietátis suæ prodígia rénovans, quæ a Deo supplíciter postuláveritis, vobis misericórditer ímpetret, ut vivéntes ac moriéntes in matérno ejus ampléxu felíciter requiescátis. ℟. Amen.', textEnglish: 'Receive this holy medal; wear it with faith, and treat it with due reverence: that the most loving Immaculate Queen of heaven may protect and defend you; and, renewing the wonders of her kindness, may she mercifully obtain for you whatever you humbly ask of God, that in life and in death you may rest happily in her motherly embrace. ℟. Amen.' },
     { isRubric: true, textLatin: 'Inde prosequitur:', textEnglish: 'Then he continues:' },
     { speakerLatin: 'Sacerdos:', speakerEnglish: 'Priest:', textLatin: 'Kýrie, eléison. Christe, eléison. Kýrie, eléison.', textEnglish: 'Lord, have mercy. Christ, have mercy. Lord, have mercy.' },
-    { speakerLatin: 'Sacerdos:', speakerEnglish: 'Priest:', textLatin: 'Pater noster {{(secreto usque ad:)}}', textEnglish: 'Our Father {{(silently until:)}}' },
+    { textLatin: 'Pater noster', textEnglish: 'Our Father' },
     { textLatin: '℣. Et ne nos indúcas in tentatiónem.', textEnglish: '℣. And lead us not into temptation.' },
     { textLatin: '℟. Sed líbera nos a malo.', textEnglish: '℟. But deliver us from evil.' },
     { textLatin: '℣. Regína sine labe origináli concépta.', textEnglish: '℣. Queen conceived without original sin.' },
