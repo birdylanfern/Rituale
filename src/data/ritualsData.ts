@@ -15,15 +15,21 @@ const modules = import.meta.glob<RitualItem>('./rites/**/*.ts', {
 
 const baseName = (path: string) => path.slice(path.lastIndexOf('/') + 1);
 
-export const RITUALS_LIST: RitualItem[] = Object.entries(modules)
+const rawList: RitualItem[] = Object.entries(modules)
   .sort(([a], [b]) => baseName(a).localeCompare(baseName(b)))
   .map(([, ritual]) => ritual);
 
-// Guard against copy-paste mistakes: ids are used in the page URL (#/id).
-if (import.meta.env.DEV) {
-  const seen = new Set<string>();
-  for (const r of RITUALS_LIST) {
-    if (seen.has(r.id)) console.warn(`[rites] Duplicate rite id: "${r.id}"`);
+const uniqueRituals: RitualItem[] = [];
+const seen = new Set<string>();
+for (const r of rawList) {
+  if (seen.has(r.id)) {
+    if (import.meta.env.DEV) {
+      console.warn(`[rites] Duplicate rite id: "${r.id}" (ignored duplicate)`);
+    }
+  } else {
     seen.add(r.id);
+    uniqueRituals.push(r);
   }
 }
+
+export const RITUALS_LIST: RitualItem[] = uniqueRituals;

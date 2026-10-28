@@ -109,7 +109,7 @@ const ritual: RitualItem = {
     { isHeading: true, textLatin: "Oratio", textEnglish: "Prayer" },
     { textLatin: "Ad te confugio, sancte Joseph, Patrone morientium, tibique, in cujus beato transitu vigiles astiterunt Jesus et Maria, per hoc utrumque carissimum pignus, animam hujus famuli{{/}}famulæ, N., in extremo agone laborantem enixe commendo, ut ab insidiis diaboli et a morte perpetua te protegente liberetur, et ad gaudia æterna pervenire mereatur. Per eundem Christum, Dominum nostrum. ℟. Amen.", textEnglish: "To you do I turn for refuge, St. Joseph, Patron of the dying, at whose happy death bed Jesus and Mary stood watch. Because of this two-fold pledge of hope, I earnestly commend to you the soul of this servant, N., in his{{/}}her last agony; so that he{{/}}she may, with you as protector, be set free from the snares of the devil and from everlasting death, and may attain to everlasting joy. Through Christ our Lord. ℟. Amen." },
     { isHeading: true, textLatin: "Tres Piæ et Utiles Morientibus Orationes", textEnglish: "Three Useful Prayers of Devotion for the Dying" },
-    { isRubric: true, textLatin: "cum Pater noster et Ave, María ter in agone mortis recitandæ", textEnglish: "to be recited three times in the agony of death, with the Our Father and Hail Mary" },
+    { isRubric: true, textLatin: "cum **Pater noster** et **Ave, María** ter in agone mortis recitandæ", textEnglish: "to be recited three times in the agony of death, with the **Our Father** and **Hail Mary**" },
     { isRubric: true, textLatin: "Primo dicitur:", textEnglish: "The first is said:" },
     { textLatin: "Kýrie, eléison.", textEnglish: "Lord, have mercy." },
     { textLatin: "Christe, eléison.", textEnglish: "Christ, have mercy." },

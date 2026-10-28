@@ -228,7 +228,7 @@ const ritual: RitualItem = {
     { textLatin: 'Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.', textEnglish: 'As it was in the beginning, is now, and ever shall be, world without end. Amen.' },
     { textLatin: '℣. Kýrie, eléison.', textEnglish: '℣. Lord, have mercy.' },
     { textLatin: '℟. Christe, eléison.', textEnglish: '℟. Christ, have mercy.' },
-    { textLatin: 'Kýrie, eléison.', textEnglish: 'Lord, have mercy.' },
+    { textLatin: '℣. Kýrie, eléison.', textEnglish: '℣. Lord, have mercy.' },
     { speakerLatin: 'Sacerdos:', speakerEnglish: 'Priest:', textLatin: 'Pater noster', textEnglish: 'Our Father' },
     { isRubric: true, textLatin: 'secreto usque ad', textEnglish: 'silently until' },
     { textLatin: '℣. Et ne nos indúcas in tentatiónem.', textEnglish: '℣. And lead us not into temptation.' },
@@ -286,15 +286,17 @@ const ritual: RitualItem = {
     },
     {
       isRubric: true,
-      textLatin: '10. Si nuptiæ non sint benedicendæ, post Psalmum 127 cum Versiculis, ut supra n. 7, Sacerdos dicat sequentem tantum orationem:',
-      textEnglish: '10. If the marriage is not to be blessed, after Psalm 127 with the versicles, as above in n. 7, the priest says only the following prayer:',
+      textLatin: '10. Si nuptiæ non sint benedicendæ, post **Psalmum 127** cum Versiculis, ut supra n. 7, Sacerdos dicat sequentem tantum orationem:',
+      textEnglish: '10. If the marriage is not to be blessed, after **Psalm 127** with the versicles, as above in n. 7, the priest says only the following prayer:',
     },
     { textLatin: 'Orémus.', textEnglish: 'Let us pray.' },
     {
       textLatin: 'Præténde, quǽsumus, Dómine, fidélibus tuis déxteram cæléstis auxílii, ut te toto corde perquírant et quæ digne póstulant assequántur. Per Christum, Dóminum nostrum. ℟. Amen.',
       textEnglish: 'O Lord, we implore Thee, extend to Thy faithful servants the right hand of Thy divine assistance, so that they may seek Thee with their whole hearts and receive from Thee whatever they ask for that is right. Through Christ our Lord. ℟. Amen.',
     },
-    { isRubric: true, textLatin: 'Deinde Sacerdos dimittit Sponsos, ut supra n. 9.', textEnglish: 'Then the priest dismisses the bride and bridegroom, as above in n. 9.' },
+    { isRubric: true, textLatin: 'Deinde Sacerdos dimittit Sponsos, dicens:', textEnglish: 'Then the priest dismisses the bride and bridegroom, saying:' },
+    { textLatin: '', englishOnly: true, textEnglish: 'Go in peace, and may the Lord be with you always.' },
+    { textLatin: '', englishOnly: true, textEnglish: '℟. Amen.' },
   ],
 };
 

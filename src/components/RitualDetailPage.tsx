@@ -70,12 +70,27 @@ export const RitualDetailPage: React.FC<Props> = ({
   const red = theme === 'dark' ? 'text-[#ea580c]' : 'text-[#b91c1c]';
   // {{…}} marks rubrical characters inside spoken text — the ( ) [ ] around alternatives and the
   // "vel"/"or" between them — which are printed in red but are not said aloud.
+  // **…** or <<…>> marks prayers, antiphons, and incipits inside rubrics, printed in black/white (not italic).
   const renderFormattedText = (text: string) =>
-    text.split(/(\{\{[\s\S]*?\}\})/).map((seg, i) => {
-      const m = /^\{\{([\s\S]*?)\}\}$/.exec(seg);
-      return m ? (
-        <span key={`r${i}`} className={`not-italic ${red}`}>{renderPlain(m[1])}</span>
-      ) : (
+    text.split(/(\{\{[\s\S]*?\}\}|\*\*[\s\S]*?\*\*|<<[\s\S]*?>>)/).map((seg, i) => {
+      const mRed = /^\{\{([\s\S]*?)\}\}$/.exec(seg);
+      if (mRed) {
+        return (
+          <span key={`r${i}`} className={`not-italic ${red}`}>{renderPlain(mRed[1])}</span>
+        );
+      }
+      const mIncipit = /^(\*\*|<<)([\s\S]*?)(\*\*|>>)$/.exec(seg);
+      if (mIncipit) {
+        return (
+          <span
+            key={`p${i}`}
+            className={`not-italic font-normal ${theme === 'dark' ? 'text-[#f3ede2]' : 'text-[#241e17]'}`}
+          >
+            {renderPlain(mIncipit[2])}
+          </span>
+        );
+      }
+      return (
         <React.Fragment key={`t${i}`}>{renderPlain(seg)}</React.Fragment>
       );
     });

@@ -44,7 +44,7 @@ const ritual: RitualItem = {
     { textLatin: "℟. Offeréntes eam in conspéctu Altíssimi.", textEnglish: "℟. Presenting his{{/}}her soul to the Most High." },
     { textLatin: "℣. Kýrie, eléison.", textEnglish: "℣. Lord, have mercy." },
     { textLatin: "℟. Christe, eléison.", textEnglish: "℟. Christ, have mercy." },
-    { textLatin: "Kýrie, eléison.", textEnglish: "Lord, have mercy." },
+    { textLatin: "℣. Kýrie, eléison.", textEnglish: "℣. Lord, have mercy." },
     { textLatin: "℣. Pater noster", textEnglish: "℣. Our Father" },
     { isRubric: true, textLatin: "secreto usque ad", textEnglish: "silently until" },
     { textLatin: "℣. Et ne nos indúcas in tentatiónem.", textEnglish: "℣. And lead us not into temptation." },

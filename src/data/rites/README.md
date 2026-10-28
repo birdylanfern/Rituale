@@ -43,6 +43,7 @@ The chip names and the blessing headings are defined in `src/data/categories.ts`
 | --- | --- |
 | Ordinary text | `{ textLatin: "…", textEnglish: "…" }` |
 | Rubric (red italic) | `{ isRubric: true, textLatin: "…", textEnglish: "…" }` |
+| Rubric citing prayer | `{ isRubric: true, textLatin: "…dicit **Misereátur**…", textEnglish: "…says **Misereatur**…" }` |
 | Heading | `{ isHeading: true, textLatin: "…", textEnglish: "…" }` |
 | Latin only | `{ …, latinOnly: true }` |
 | Note | `{ isNote: true, noteNumber: 1, textLatin: "…", textEnglish: "…" }` |

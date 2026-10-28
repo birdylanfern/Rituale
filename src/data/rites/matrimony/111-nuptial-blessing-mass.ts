@@ -56,8 +56,8 @@ const ritual: RitualItem = {
     },
     {
       isRubric: true,
-      textLatin: 'Quibus dictis, Sacérdos redit ad médium altáris, et dicit Líbera nos, quǽsumus, Dómine, et cétera de more.',
-      textEnglish: 'After saying these prayers, the priest returns to the middle of the altar, and says Deliver us, we beseech You, O Lord, and the rest as usual.',
+      textLatin: 'Quibus dictis, Sacérdos redit ad médium altáris, et dicit **Líbera nos, quǽsumus, Dómine**, et cétera de more.',
+      textEnglish: 'After saying these prayers, the priest returns to the middle of the altar, and says **Deliver us, we beseech You, O Lord**, and the rest as usual.',
     },
     {
       isHeading: true,
@@ -66,8 +66,8 @@ const ritual: RitualItem = {
     },
     {
       isRubric: true,
-      textLatin: 'Missa perácta, Sacérdos, dicto Ite, missa est vel Benedicámus Dómino, priúsquam benédicat pópulum, convérsus ad Sponsos, ipsos benedícit, dicens:',
-      textEnglish: 'When the Mass is finished, after saying Go, the Mass is ended, or Let us bless the Lord, and before blessing the people, the priest turns to the bride and bridegroom and blesses them, saying:',
+      textLatin: 'Missa perácta, Sacérdos, dicto **Ite, missa est** vel **Benedicámus Dómino**, priúsquam benédicat pópulum, convérsus ad Sponsos, ipsos benedícit, dicens:',
+      textEnglish: 'When the Mass is finished, after saying **Go, the Mass is ended**, or **Let us bless the Lord**, and before blessing the people, the priest turns to the bride and bridegroom and blesses them, saying:',
     },
     {
       textLatin: 'Deus Abraham, Deus Isaac, et Deus Jacob sit vobíscum: et ipse impléat benedictiónem suam in vobis: ut videátis fílios filiórum vestrórum usque ad tértiam et quartam generatiónem, et póstea vitam habeátis ætérnam, præstánte Dómino nostro Jesu Christo: Qui cum Patre et Spíritu Sancto vivit et regnat Deus, per ómnia sǽcula sæculórum.',

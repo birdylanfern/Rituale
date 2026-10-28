@@ -34,8 +34,8 @@ const foldWithMap = (s: string): { out: string; map: number[] } => {
 
 export const fold = (s: string): string => foldWithMap(s).out;
 
-/** Removes the [^3] note markers and {{red}} markup so they never get in the way of a match. */
-const clean = (s: string): string => s.replace(/\[\^\d+\]|\{\{|\}\}/g, '');
+/** Removes the [^3] note markers, {{red}} markup, and **incipit** markers so they never get in the way of a match. */
+const clean = (s: string): string => s.replace(/\[\^\d+\]|\{\{|\}\}|\*\*|<<|>>/g, '');
 
 export const tokenize = (query: string): string[] => fold(query).split(/\s+/).filter(Boolean);
 
