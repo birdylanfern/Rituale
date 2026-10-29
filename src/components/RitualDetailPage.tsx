@@ -25,7 +25,13 @@ const SPLIT_WORDS: Record<string, RegExp> = {
   cru: /^cis$/, // Cru✠cis
   cor: /^de$/, // cor✠de
   unctio: /^nem$/, // Unctió✠nem
-  fron: /^te$/, // fron✠te
+  fron: /^tem?$/, // fron✠te, fron✠tem
+  au: /^res$/, // au✠res
+  ocu: /^los$/, // ócu✠los
+  na: /^res$/, // na✠res
+  pe: /^ctus$/, // pe✠ctus
+  sca: /^pulas$/, // scá✠pulas
+  spiri: /^tus$/, // Spíri✠tus
   anoint: /^ing$/, // anoint✠ing
 };
 const keepCrossWithWords = (text: string) =>
